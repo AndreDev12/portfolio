@@ -7,6 +7,8 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [Getting Started](#getting-started)
+  - [Installation and Setup Instructions](#installation-and-setup-instructions)
 - [Author](#author)
 
 ## Overview
@@ -15,12 +17,29 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
+- Solution URL: [Add solution URL here](https://github.com/AndreDev12/portfolio)
 - Live Site URL: [Add live site URL here]()
 
 ## My process
 
 ### Built with
+
+- [React](https://reactjs.org/) - JS library
+- [Styled-components](https://styled-components.com/) - Library built for React
+
+## Getting started
+
+### Installation and Setup Instructions
+
+1. Clone this repository: git clone https://github.com/AndreDev12/portfolio.git
+
+2. Installation: `npm install`
+
+3. In the project directory, you can run: `npm run dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.
 
 ## Author
 
