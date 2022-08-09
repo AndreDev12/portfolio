@@ -1,13 +1,15 @@
 import Home from "./components/Header/Home";
-
-// import reactLogo from './assets/react.svg'
-{/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
-
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from "./styles/GlobalStyle";
+import { theme } from "./styles/theme";
 
 function App() {
 
   return (
-    <Home />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Home />
+    </ThemeProvider>
   )
 }
 
