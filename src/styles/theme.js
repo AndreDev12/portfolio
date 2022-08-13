@@ -4,10 +4,11 @@ export const theme = {
       persianIndigo: '#2A1673',
       purpleHeart: '#402CBF',
       cornflowerBlue: '#6B98F2',
-      bittersweet: '#F25C5C'
+      bittersweet: '#F25C5C',
+      white: '#FFFFFF'
     },
     fonts: {
-      // family: 'Archivo, sans-serif',
+      family: 'Ubuntu, sans-serif',
       sizes: {
       },
       weights: {

@@ -1,8 +1,11 @@
 import React from 'react';
+import { Header } from './styles';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Header>
+      
+    </Header>
   )
 }
 
