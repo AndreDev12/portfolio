@@ -2,12 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   html{
+    box-sizing: border-box;
+    font-size: 62.5%;
     scroll-behavior: smooth;
-    font-size: 92.5%;
   }
 
-  *, *::before, *::after {
-    box-sizing: border-box;
+  *, *::before, *::after{
+    box-sizing: inherit;
+    /* scroll-behavior: smooth; */
   }
 
   *{
@@ -16,9 +18,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    /* overflow-x: hidden; */
+    background-color: ${props => props.theme.colors.christalle};
     font-family: ${props => props.theme.fonts.family};
-    background-color: ${props => props.theme.colors.christalle}
+    /* overflow-x: hidden; */
   }
 
   img{
@@ -31,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
     font-weight: 700;
     background-color: transparent;
-    &:focus {
+    &:focus{
       outline: none;
     }
   }

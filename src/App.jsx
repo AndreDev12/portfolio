@@ -1,14 +1,14 @@
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/GlobalStyle';
-import Home from './components/Header/Home';
+import RouteTest from './router/RouteTest';
 
 function App() {
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Home />
+      <RouteTest />
     </ThemeProvider>
   )
 }
