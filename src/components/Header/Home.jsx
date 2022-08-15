@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 import { Header, Logo, Nav } from './styles';
-import portfolioLogo from '../../assets/logos/Test logo 1.svg';
+import portfolioLogo from '../../assets/logos/Test logo 2.svg';
 
 const Home = () => {
   return (
