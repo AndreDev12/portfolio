@@ -7,7 +7,7 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
     width: 100%;
-    background-color: ${props => props.theme.colors.persianIndigo};
+    background-color: ${props => props.theme.colors.purpleHeart};
     height: 5rem;
     padding: 1rem;
     div{

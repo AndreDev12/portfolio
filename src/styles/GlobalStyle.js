@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: ${props => props.theme.colors.christalle};
+    background-color: ${props => props.theme.colors.body};
     font-family: ${props => props.theme.fonts.family};
     /* overflow-x: hidden; */
   }
