@@ -7,20 +7,24 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
     width: 100%;
-    background-color: ${props => props.theme.colors.purpleHeart};
+    background-color: ${props => props.theme.colors.purpleLight};
     height: 5rem;
     padding: 1rem;
     div{
         display: flex;
         height: 100%;
         justify-content: space-between;
-        width: 90%;
-        margin: 0 auto;
-        max-width: 110rem;
+        width: 100%;
+        align-items: center;
     }
 `;
 
 export const Logo = styled.div`
     width: 12rem;
     height: 3rem;
+`;
+
+export const MenuButton = styled.div`
+    width: 4rem;
+    height: 100%;
 `;
