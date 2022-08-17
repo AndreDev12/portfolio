@@ -42,10 +42,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  ul, ol{
-    padding: 0;
+  /* ul, ol{
     margin: 0;
-  }
+    padding: 0;
+  } */
 
   p{
     margin: 1rem 0;

@@ -25,9 +25,11 @@ const Home = () => {
             }
           </MenuButton>
           <Nav toggle={toggle}>
-            <Link to="#about">About</Link>
-            <Link to="#skills">Skills</Link>
-            <Link to="#portfolio">Portfolio</Link>
+            <ul>
+              <li><Link to="#about">About</Link></li>
+              <li><Link to="#skills">Skills</Link></li>
+              <li><Link to="#portfolio">Portfolio</Link></li>
+            </ul>
           </Nav>
         </div>
       </div>
