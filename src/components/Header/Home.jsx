@@ -1,22 +1,36 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 import { Header, Logo, MenuButton, Nav } from './styles';
-import portfolioLogo from '../../assets/logos/logo.svg';
+import logo from '../../assets/logos/logo.svg';
 
 const Home = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <Header>
-      <Nav>
+      <div>
         <div>
           <Logo>
-            <Link to={"/"}>
-              <img src={portfolioLogo} alt="Portfolio logo" />
+            <Link to="/">
+              <img src={logo} alt="Portfolio logo" />
             </Link>
           </Logo>
-          <MenuButton>
+          <MenuButton onClick={() => setToggle(!toggle)}>
+            {
+              toggle ? 
+              <FaTimes color="#FFFFFF" size="3rem" /> :
+              <FaBars color="#FFFFFF" size="3rem" />
+            }
           </MenuButton>
+          <Nav toggle={toggle}>
+            <Link to="#about">About</Link>
+            <Link to="#skills">Skills</Link>
+            <Link to="#portfolio">Portfolio</Link>
+          </Nav>
         </div>
-      </Nav>
+      </div>
     </Header>
   )
 }

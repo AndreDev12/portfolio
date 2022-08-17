@@ -18,8 +18,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: ${props => props.theme.colors.darkBlue};
-    font-family: ${props => props.theme.fonts.family};
+    background-color: ${({theme}) => theme.colors.darkBlue};
+    font-family: ${({theme}) => theme.fonts.family};
     /* overflow-x: hidden; */
   }
 
