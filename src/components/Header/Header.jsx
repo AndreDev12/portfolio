@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-import { Header, Logo, MenuButton, Nav } from './styles';
+import { ContainerHeader, Logo, MenuButton, Nav } from './styles';
 import logo from '../../assets/logos/logo.svg';
 
-const Home = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Header>
+    <ContainerHeader>
       <div>
         <div>
           <Logo>
@@ -33,8 +33,8 @@ const Home = () => {
           </Nav>
         </div>
       </div>
-    </Header>
+    </ContainerHeader>
   )
 }
 
-export default Home
+export default Header

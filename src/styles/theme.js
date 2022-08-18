@@ -16,13 +16,22 @@ export const theme = {
     fonts: {
       family: 'Ubuntu, sans-serif',
       sizes: {
+        sm: '1.4rem',
+        md: '1.6rem',
+        lg: '1.8rem',
+        xl: '2.6rem'
       },
       weights: {
+        light: 300,
+        regular: 400,
+        medium: 500,
+        bold: 700
       }
     },
     breakpoints: {
-      mobile: '',
-      tablet: '',
-      desktop: ''
+      mobile: '480px',
+      tablet: '768px',
+      laptop: '1024px',
+      desktop: '1200px'
     }
   };
