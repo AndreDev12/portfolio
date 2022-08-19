@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/GlobalStyle';
 import AppRouter from './router/AppRouter';
+import Main from './container/Main';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <AppRouter />
+        <Main />
       </ThemeProvider>
     </BrowserRouter>
   )

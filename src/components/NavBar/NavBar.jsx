@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { ContainerHeader, Logo, MenuButton, Nav } from './styles';
 import logo from '../../assets/logos/logo.svg';
 
-const Header = () => {
+const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -37,4 +37,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default NavBar;
