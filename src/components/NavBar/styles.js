@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const ContainerHeader = styled.header`
     /* height: 100vh; */
     width: 100%;
+    position: fixed;
+    z-index: 20;
     > div{
         width: 100%;
         background-color: ${({theme}) => theme.colors.purple};

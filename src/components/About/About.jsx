@@ -1,6 +1,10 @@
+import { AboutDiv } from "./styles";
+
 const About = () => {
   return (
-    <div>About</div>
+    <AboutDiv>
+      About
+    </AboutDiv>
   )
 }
 

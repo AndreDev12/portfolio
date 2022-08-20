@@ -1,6 +1,10 @@
+import { SkillsDiv } from "./styles";
+
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <SkillsDiv>
+      Skills
+    </SkillsDiv>
   )
 }
 
