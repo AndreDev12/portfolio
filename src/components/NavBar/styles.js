@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerHeader = styled.header`
     /* height: 100vh; */
@@ -36,7 +36,7 @@ export const MenuButton = styled.div`
 `;
 
 export const Nav = styled.nav`
-    background-color: ${({theme}) => theme.colors.test5};
+    background-color: ${({theme}) => theme.colors.test11};
     height: calc(100vh - 5rem);
     max-width: 25rem;
     position: fixed;

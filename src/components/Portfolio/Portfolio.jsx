@@ -1,4 +1,4 @@
-import { PortfolioDiv } from "./styles";
+import { PortfolioDiv } from './styles';
 
 const Portfolio = () => {
   return (

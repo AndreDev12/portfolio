@@ -1,4 +1,4 @@
-import { HomeDiv } from "./styles";
+import { HomeDiv } from './styles';
 
 const Home = () => {
   return (

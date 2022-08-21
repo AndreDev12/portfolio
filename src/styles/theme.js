@@ -11,7 +11,13 @@ export const theme = {
       test3: '#4B32D9',
       test4: '#2B42F0',
       test5: 'rgba(42,43,56,.5)',
-      test6: '#352559'
+      test6: '#352559',
+      // new colors
+      test11: '#181A27',
+      test12: '#0A0416',
+      test13: '#C770F0',
+      test14: '#934CCE5E',
+      test15: '#623686'
     },
     fonts: {
       family: 'Ubuntu, sans-serif',

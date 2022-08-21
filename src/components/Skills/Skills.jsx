@@ -1,4 +1,4 @@
-import { SkillsDiv } from "./styles";
+import { SkillsDiv } from './styles';
 
 const Skills = () => {
   return (

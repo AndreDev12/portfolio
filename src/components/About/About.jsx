@@ -1,4 +1,4 @@
-import { AboutDiv } from "./styles";
+import { AboutDiv } from './styles';
 
 const About = () => {
   return (
