@@ -1,4 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from './styles/theme';
@@ -8,12 +7,10 @@ import AppRouter from './router/AppRouter';
 function App() {
 
   return (
-    <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <AppRouter />
-      </ThemeProvider>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <AppRouter />
+    </ThemeProvider>
   )
 }
 
