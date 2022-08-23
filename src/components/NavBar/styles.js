@@ -10,12 +10,16 @@ export const HeaderContainer = styled.header`
     > div{
         width: 100%;
         height: 5rem;
-        padding: 1rem;
+        /* padding: 1rem; */
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1400px;
         div{
             display: flex;
             height: 100%;
             justify-content: space-between;
             width: 100%;
+            align-items: center;
         }
     }
 `;

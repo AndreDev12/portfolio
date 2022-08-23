@@ -3,8 +3,8 @@ import { HomeContainer, HomeDiv, AboutDiv } from './styles';
 const Home = () => {
   return (
     <HomeContainer>
-      <section>
-        <HomeDiv>
+      <HomeDiv>
+        <div>
           <div>
             <h2>Hi, my name is</h2>
             <h1>Hector Andre</h1>
@@ -15,9 +15,9 @@ const Home = () => {
           <div>
             <p>I build web projects adapted to different resolutions, currently I focus on learning the Redux pattern.</p>
           </div>
-        </HomeDiv>
-        <AboutDiv>About</AboutDiv>
-      </section>
+        </div>
+      </HomeDiv>
+      <AboutDiv>About test</AboutDiv>
     </HomeContainer>
   )
 }

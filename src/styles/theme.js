@@ -29,7 +29,9 @@ export const theme = {
         sm: '1.4rem',
         md: '1.6rem',
         lg: '1.8rem',
-        xl: '2.6rem'
+        xl: '2.6rem',
+        // new sizes
+        test1: '4rem',
       },
       weights: {
         light: 300,
