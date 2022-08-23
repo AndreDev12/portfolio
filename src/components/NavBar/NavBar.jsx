@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-import { ContainerHeader, Logo, MenuButton, Nav } from './styles';
+import { HeaderContainer, ListItem, Logo, MenuButton, Nav } from './styles';
 import logo from '../../assets/logos/logo.svg';
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <ContainerHeader>
+    <HeaderContainer>
       <div>
         <div>
           <Logo>
@@ -26,15 +26,15 @@ const NavBar = () => {
           </MenuButton>
           <Nav toggle={toggle}>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="about">About</Link></li>
-              <li><Link to="skills">Skills</Link></li>
-              <li><Link to="portfolio">Portfolio</Link></li>
+              <ListItem><Link to="/">Home</Link></ListItem>
+              <ListItem><Link to="about">About</Link></ListItem>
+              <ListItem><Link to="skills">Skills</Link></ListItem>
+              <ListItem><Link to="portfolio">Portfolio</Link></ListItem>
             </ul>
           </Nav>
         </div>
       </div>
-    </ContainerHeader>
+    </HeaderContainer>
   )
 }
 

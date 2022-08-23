@@ -1,6 +1,6 @@
 export const theme = {
     colors: {
-      black: '#000000',
+      // blackTest: '#000000',
       darkBlue: '#10101A',
       gray: '#C4C4C4',
       purple: '#2A1673',
@@ -13,11 +13,15 @@ export const theme = {
       test5: 'rgba(42,43,56,.5)',
       test6: '#352559',
       // new colors
-      test11: '#181A27',
+      black: '#181A27',
       test12: '#0A0416',
       test13: '#C770F0',
       test14: '#934CCE5E',
-      test15: '#623686'
+      test15: '#623686',
+      // border-bottom header
+      test16: '#0b0620',
+      test17: '#130a34',
+      darkPurple: '#1E0B60',
     },
     fonts: {
       family: 'Ubuntu, sans-serif',

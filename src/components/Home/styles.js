@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-export const HomeDiv = styled.div`
+export const HomeContainer = styled.div`
     height: calc(100vh - 5rem);
-    color: #fff;
     position: absolute;
     top: 5rem;
+    width: 100%;
+    color: #fff;
 `;
+
+export const HomeDiv = styled.div``;
+
+export const AboutDiv = styled.div``;
