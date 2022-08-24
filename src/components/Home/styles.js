@@ -17,11 +17,15 @@ export const HomeDiv = styled.div`
     align-items: center;
     h2{
         font-size: ${({theme}) => theme.fonts.sizes.md};
-        color: ${({theme}) => theme.colors.purple}
+        color: ${({theme}) => theme.colors.purple};
     }
     h1{
         font-size: ${({theme}) => theme.fonts.sizes.test1};
         /* color: ${({theme}) => theme.colors.purple} */
+    }
+    span{
+        font-size: ${({theme}) => theme.fonts.sizes.test1};
+        color: ${({theme}) => theme.colors.purple}; 
     }
 `;
 
