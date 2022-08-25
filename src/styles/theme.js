@@ -33,7 +33,7 @@ export const theme = {
         // new sizes
         test1: '1.6rem',
         test2: '1.8rem',
-        test3: '3rem',
+        test3: '2.5rem',
         test4: '4rem',
       },
       weights: {

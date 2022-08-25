@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
-import { HomeContainer, HomeDiv, AboutDiv } from './styles';
+import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph } from './styles';
 
 const Home = () => {
   const el = useRef(null);
@@ -31,16 +31,14 @@ const Home = () => {
     <HomeContainer>
       <HomeDiv>
         <div>
-          <div>
+          <NameContainer>
             <h2>Hi, my name is</h2>
             <h1>Hector Andre</h1>
-          </div>
-          <div>
+          </NameContainer>
+          <Specialty>
             <h3>I'm</h3><span ref={el}></span>
-          </div>
-          <div>
-            <p>I build web projects adapted to different resolutions. Currently, I focus on learning the Redux pattern.</p>
-          </div>
+          </Specialty>
+          <Paragraph>I build web projects adapted to different devices. Currently, I focus on learning the Redux pattern.</Paragraph>
         </div>
       </HomeDiv>
       <AboutDiv>About test</AboutDiv>
