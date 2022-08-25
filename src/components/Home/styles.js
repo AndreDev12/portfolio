@@ -16,16 +16,25 @@ export const HomeDiv = styled.div`
     display: flex;
     align-items: center;
     h2{
-        font-size: ${({theme}) => theme.fonts.sizes.md};
+        font-size: ${({theme}) => theme.fonts.sizes.test1};
         color: ${({theme}) => theme.colors.purple};
     }
     h1{
-        font-size: ${({theme}) => theme.fonts.sizes.test1};
+        font-size: ${({theme}) => theme.fonts.sizes.test4};
         /* color: ${({theme}) => theme.colors.purple} */
+        /* font-weight: 400; */
+    }
+    h3{
+        font-size: ${({theme}) => theme.fonts.sizes.test3};
     }
     span{
-        font-size: ${({theme}) => theme.fonts.sizes.test1};
+        font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple}; 
+    }
+    p{
+        color: ${({theme}) => theme.colors.gray};
+        font-size: ${({theme}) => theme.fonts.sizes.test2};
+        line-height: 1.3;
     }
 `;
 

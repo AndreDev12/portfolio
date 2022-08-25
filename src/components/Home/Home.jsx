@@ -10,19 +10,14 @@ const Home = () => {
   useEffect(() => {
     const options = {
       strings: [
-        'front-end developer',
-        'college student',
+        'a front-end developer',
+        'a college student',
         'self-taught'
       ],
-      // startDelay: 300,
-      // typeSpeed: 150,
-      // backDelay: 150,
-      // backSpeed: 150,
-      // smartBackspace: true,
-      // showCursor: false,
-      // loop: true,
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
     };
 
     typed.current = new Typed(el.current, options);
@@ -41,10 +36,10 @@ const Home = () => {
             <h1>Hector Andre</h1>
           </div>
           <div>
-            <h3>I'm a</h3><span ref={el}></span>
+            <h3>I'm</h3><span ref={el}></span>
           </div>
           <div>
-            <p>I build web projects adapted to different resolutions, currently I focus on learning the Redux pattern.</p>
+            <p>I build web projects adapted to different resolutions. Currently, I focus on learning the Redux pattern.</p>
           </div>
         </div>
       </HomeDiv>

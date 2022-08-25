@@ -31,7 +31,10 @@ export const theme = {
         lg: '1.8rem',
         xl: '2.6rem',
         // new sizes
-        test1: '4rem',
+        test1: '1.6rem',
+        test2: '1.8rem',
+        test3: '3rem',
+        test4: '4rem',
       },
       weights: {
         light: 300,

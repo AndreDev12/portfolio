@@ -31,6 +31,7 @@
 
 - [React](https://reactjs.org/) - JS library
 - [Styled-components](https://styled-components.com/) - Library built for React
+- [typed.js](https://www.npmjs.com/package/typed.js) - Library that types
 
 ## Getting started
 
