@@ -52,5 +52,9 @@ export const Paragraph = styled.p`
 // -----------
 
 export const AboutDiv = styled.div`
-    height: 10rem;
+    /* height: 10rem; */
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
 `;
