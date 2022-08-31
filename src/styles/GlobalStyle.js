@@ -23,6 +23,42 @@ export const GlobalStyle = createGlobalStyle`
     /* overflow-x: hidden; */
   }
 
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2d1950;
+    /* background: transparent; */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* background: rgba(178, 121, 216, 0.959); */
+    background: ${({theme}) => theme.colors.purple};
+    border-radius: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(222, 130, 235, 0.911);
+    border-radius: 12px;
+  }
+
+/* body::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: blue;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff2;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+} */
+
   img{
     display: block;
     width: 100%;
