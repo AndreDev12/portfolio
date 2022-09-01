@@ -23,10 +23,12 @@ export const NameContainer = styled.div`
     h2{
         font-size: ${({theme}) => theme.fonts.sizes.test1};
         color: ${({theme}) => theme.colors.purple};
+        text-transform: uppercase;
     }
     h1{
         font-size: ${({theme}) => theme.fonts.sizes.test4};
         color: ${({theme}) => theme.colors.white};
+        text-transform: uppercase;
     }
 `;
 

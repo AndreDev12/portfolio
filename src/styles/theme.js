@@ -34,7 +34,7 @@ export const theme = {
         test1: '1.6rem',
         test2: '1.8rem',
         test3: '2.5rem',
-        test4: '4rem',
+        test4: '3.7rem',
       },
       weights: {
         light: 300,
