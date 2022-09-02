@@ -20,7 +20,11 @@ export const GlobalStyle = createGlobalStyle`
   body{
     background-color: ${({theme}) => theme.colors.darkBlue};
     font-family: ${({theme}) => theme.fonts.family};
-    /* overflow-x: hidden; */
+    /* position: relative; */
+  }
+  
+  #root{
+    position: relative;
   }
 
   ::-webkit-scrollbar{

@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
-    position: absolute;
-    top: 5rem;
     width: 100%;
+    /* position: absolute; */
+    /* top: 5rem; */
     /* height: calc(100vh - 5rem); */
 `;
 
 export const HomeDiv = styled.div`
-    height: calc(100vh - 5.1rem);
+    height: 100vh;
     width: 90%;
     margin: 0 auto;
     max-width: 1400px;
     display: flex;
     align-items: center;
+    /* height: calc(100vh - 5.1rem); */
     > div{
         margin: 0 auto;
     }
@@ -68,13 +69,9 @@ export const PresentationDiv = styled.div`
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        /* font-size: 1.8rem; */
-        /* font-weight: 500; */
-    }
-    &:nth-of-type(p){
-        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
     p{
-        margin: 2rem 0;
+        margin: 0 0 2rem;
     }
 `;
