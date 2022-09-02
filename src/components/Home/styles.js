@@ -51,12 +51,30 @@ export const Paragraph = styled.p`
     line-height: 1.3;
 `;
 
-// -----------
-
 export const AboutDiv = styled.div`
     /* height: 10rem; */
     color: #fff;
     width: 90%;
     margin: 0 auto;
     max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+`;
+
+export const PresentationDiv = styled.div`
+    h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: ${({theme}) => theme.fonts.sizes.test3};
+        color: ${({theme}) => theme.colors.purple};
+        /* font-size: 1.8rem; */
+        /* font-weight: 500; */
+    }
+    &:nth-of-type(p){
+        margin-top: 4rem;
+    }
+    p{
+        margin: 2rem 0;
+    }
 `;

@@ -1,10 +1,9 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import { Link } from 'react-router-dom';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
 
-import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph } from './styles';
+import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph, PresentationDiv } from './styles';
 
 const Home = () => {
   const el = useRef(null);
@@ -45,25 +44,36 @@ const Home = () => {
         </div>
       </HomeDiv>
       <AboutDiv>
-        <div>
+        <PresentationDiv>
           <h4>Let me introduce myself</h4>
           <p>I fell in love with programming when I was taking the web application development course at university, and that's when I made the decision to study front-end development technologies.</p>
-          <p>I handle technologies such as Javascript, React and styled-components.</p>
+          <p>I handle technologies such as Javascript, React and Styled-components.</p>
           <p>My field of interest is building front-end applications based on React.</p>
-        </div>
+        </PresentationDiv>
         <div>
           <h4>Find me on</h4>
           <p>Feel free to connect with me</p>
           <div>
-            <Link to="">
+            <a 
+              href="https://github.com/AndreDev12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsGithub color="#f0f6fc" size="3rem" />
-            </Link>
-            <Link to="">
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-huambachano-torres/" target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsLinkedin color="#0a66c2" size="3rem" />
-            </Link>
-            <Link to="">
+            </a>
+            <a 
+              href="https://twitter.com/HectorAndreHT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter color="#1d9bf0" size="3rem" />
-            </Link>
+            </a>
           </div>
         </div>
       </AboutDiv>
