@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
     width: 100%;
-    /* position: absolute; */
-    /* top: 5rem; */
-    /* height: calc(100vh - 5rem); */
 `;
 
 export const HomeDiv = styled.div`
@@ -14,7 +11,6 @@ export const HomeDiv = styled.div`
     max-width: 1400px;
     display: flex;
     align-items: center;
-    /* height: calc(100vh - 5.1rem); */
     > div{
         margin: 0 auto;
     }
@@ -50,28 +46,54 @@ export const Paragraph = styled.p`
     color: ${({theme}) => theme.colors.gray};
     font-size: ${({theme}) => theme.fonts.sizes.test2};
     line-height: 1.3;
+    text-align: justify;
 `;
 
 export const AboutDiv = styled.div`
-    /* height: 10rem; */
-    color: #fff;
     width: 90%;
     margin: 0 auto;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+    padding-bottom: 3rem;
 `;
 
-export const PresentationDiv = styled.div`
+export const Presentation = styled.div`
     h4{
         text-align: center;
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
     p{
         margin: 0 0 2rem;
+        color: ${({theme}) => theme.colors.gray};
+        font-size: 1.8rem;
+        line-height: 1.3;
+        text-align: justify;
     }
+`;
+
+export const Contact = styled.div`
+    h4{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: ${({theme}) => theme.fonts.sizes.test3};
+        color: ${({theme}) => theme.colors.purple};
+        margin-bottom: 1rem;
+    }
+    p{
+        margin: 0 0 2rem;
+        color: ${({theme}) => theme.colors.gray};
+        font-size: 1.8rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+`;
+
+export const SocialNetworks = styled.div`
+    display: flex;
+    justify-content: space-evenly;
 `;

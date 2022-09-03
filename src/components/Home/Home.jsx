@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
 
-import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph, PresentationDiv } from './styles';
+import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph, Presentation, Contact, SocialNetworks } from './styles';
 
 const Home = () => {
   const el = useRef(null);
@@ -44,16 +44,16 @@ const Home = () => {
         </div>
       </HomeDiv>
       <AboutDiv>
-        <PresentationDiv>
+        <Presentation>
           <h4>Let me introduce myself</h4>
           <p>I fell in love with programming when I was taking the web application development course at university, and that's when I made the decision to study front-end development technologies.</p>
           <p>I handle technologies such as Javascript, React and Styled-components.</p>
           <p>My field of interest is building front-end applications based on React.</p>
-        </PresentationDiv>
-        <div>
+        </Presentation>
+        <Contact>
           <h4>Find me on</h4>
           <p>Feel free to connect with me</p>
-          <div>
+          <SocialNetworks>
             <a 
               href="https://github.com/AndreDev12"
               target="_blank"
@@ -74,8 +74,8 @@ const Home = () => {
             >
               <FaTwitter color="#1d9bf0" size="3rem" />
             </a>
-          </div>
-        </div>
+          </SocialNetworks>
+        </Contact>
       </AboutDiv>
     </HomeContainer>
   )
