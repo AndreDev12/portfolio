@@ -3,7 +3,8 @@ import Typed from 'typed.js';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
 
-import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph, Presentation, Contact, SocialNetworks } from './styles';
+import { HomeContainer, HomeDiv, AboutDiv, NameContainer, Specialty, Paragraph, Presentation, Contact, SocialNetworks, Picture } from './styles';
+import profilePicture from '../../assets/img/profile picture.jpg';
 
 const Home = () => {
   const el = useRef(null);
@@ -32,6 +33,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <HomeDiv>
+        <Picture src={profilePicture} alt="Profile picture" />
         <div>
           <NameContainer>
             <h2>Hi, my name is</h2>

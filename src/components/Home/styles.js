@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const HomeContainer = styled.div`
     width: 100%;
@@ -10,10 +10,29 @@ export const HomeDiv = styled.div`
     margin: 0 auto;
     max-width: 1400px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    row-gap: 3rem;
     > div{
         margin: 0 auto;
     }
+`;
+
+const bounce = keyframes`
+    from{
+        transform: translateY(0rem);
+    }
+  
+    to{
+        transform: translateY(-1rem);
+    } 
+`;
+
+export const Picture = styled.img`
+    width: 15rem;
+    border-radius: 50%;
+    animation: ${bounce} 1s alternate infinite;
 `;
 
 export const NameContainer = styled.div`
