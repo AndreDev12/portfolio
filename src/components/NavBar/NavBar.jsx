@@ -28,7 +28,6 @@ const NavBar = () => {
             <ul>
               <ListItem><Link to="/">Home</Link></ListItem>
               <ListItem><Link to="about">About</Link></ListItem>
-              <ListItem><Link to="skills">Skills</Link></ListItem>
               <ListItem><Link to="portfolio">Portfolio</Link></ListItem>
             </ul>
           </Nav>

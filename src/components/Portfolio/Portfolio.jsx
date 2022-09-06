@@ -1,8 +1,11 @@
-import { PortfolioDiv } from './styles';
+import { PortfolioContainer } from "./styles";
+
 
 const Portfolio = () => {
   return (
-    <PortfolioDiv>Portfolio</PortfolioDiv>
+    <PortfolioContainer>
+      
+    </PortfolioContainer>
   )
 }
 

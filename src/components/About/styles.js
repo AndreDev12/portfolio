@@ -36,7 +36,7 @@ export const Skills = styled.div`
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
     ul{
         display: grid;
@@ -52,4 +52,14 @@ export const ListItem = styled.li`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* svg{
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            width: 8rem;
+            height: 8rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            width: 12rem;
+            height: 12rem;
+        }
+    } */
 `;
