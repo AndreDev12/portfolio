@@ -5,21 +5,17 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutDiv = styled.div`
-    height: 100vh;
+    height: 70vh;
     width: 90%;
     margin: 0 auto;
     max-width: 1400px;
     padding-top: 11rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* padding-top: 10rem; */
     h1{
         text-align: center;
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
     p{
         margin: 0 0 2rem;
@@ -34,6 +30,7 @@ export const Skills = styled.div`
     width: 90%;
     margin: 0 auto;
     max-width: 1400px;
+    padding-block: 3rem;
     h2{
         text-align: center;
         text-transform: uppercase;
@@ -44,12 +41,15 @@ export const Skills = styled.div`
     ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 3rem;
     }
 `;
 
 export const ListItem = styled.li`
     color: ${({theme}) => theme.colors.gray};
     font-size: 1.8rem;
-    /* Cambiar el text-transform de las tecnologìas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 `;

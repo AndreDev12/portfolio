@@ -14,12 +14,12 @@ const About = () => {
       <Skills>
         <h2>Skills</h2>
         <ul>
-          <ListItem><FaHtml5 color="#dd5237" size="6rem" />html5</ListItem>
-          <ListItem><FaCss3Alt color="#2396f3" size="3rem" />css3</ListItem>
-          <ListItem><SiJavascript color="#f7e038" size="3rem" />javascript</ListItem>
-          <ListItem><FaSass color="#ca6598" size="3rem" />sass</ListItem>
-          <ListItem><FaReact color="#61dafb" size="3rem" />react</ListItem>
-          <ListItem><SiStyledcomponents color="#ffd45d" size="3rem" />styled components 💅🏾</ListItem>
+          <ListItem><FaHtml5 color="#dd5237" size="6rem" />HTML5</ListItem>
+          <ListItem><FaCss3Alt color="#2396f3" size="6rem" />CSS3</ListItem>
+          <ListItem><SiJavascript color="#f7e038" size="6rem" />JavaScript</ListItem>
+          <ListItem><FaSass color="#ca6598" size="6rem" />Sass</ListItem>
+          <ListItem><FaReact color="#61dafb" size="6rem" />React</ListItem>
+          <ListItem><SiStyledcomponents color="#ee3f86" size="6rem" />Styled components</ListItem>
         </ul>
       </Skills>
     </AboutContainer>
