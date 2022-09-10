@@ -9,6 +9,7 @@ export const PortfolioDiv = styled.div`
     margin: 0 auto;
     max-width: 1400px;
     padding-top: 11rem; 
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     /* height: 60vh; */
@@ -36,31 +37,36 @@ export const Projects = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(25rem, auto);
-    row-gap: 1rem;
+    grid-gap: 1.5rem;
 `;
 
 export const Card = styled.div`
-    /* padding: 1rem; */
-    /* background: var(--card-background); */
     color: ${({theme}) => theme.colors.white};
-    /* border-radius: 0.5rem; */
     transition: 0.4s ease-in-out;
-    border-radius: 0.5rem;
     cursor: pointer;
     position: relative;
-    &:hover{
-        /* box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8); */
-        z-index: 50;
-        box-shadow: inset 0 10rem 100rem 1rem ${({theme}) => theme.colors.purple};
+    &:hover::before{
+        opacity: 0.8;
+    }
+    &::before{
+        border-radius: 0.5rem;
+        box-shadow: inset 0 10rem 100rem 1rem ${({theme}) => theme.colors.blackBoxShadow};
+        content: '';
+        display: block;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        transition: opacity .3s .2s;
+        width: 100%;
     }
     &:hover div{
         opacity: 1;
     }
-    img{
-        border-radius: 0.5rem;
-        height: 100%;
-        object-fit: cover;
-    }
+`;
+
+export const ProjectImage = styled.img`
+    border-radius: 0.5rem;
+    height: 100%;
 `;
 
 export const ProjectInfo = styled.div`
@@ -83,20 +89,30 @@ export const ProjectText = styled.div`
     left: 1rem;
     h3{
         font-size: 1.4rem;
-        /* color: ${({theme}) => theme.colors.purple}; */
     }
     p{
         font-size: 1.3rem;
         margin: 0.5rem 0 0;
-        /* color: ${({theme}) => theme.colors.purple}; */
     }
 `;
 
 export const ProjectLinks = styled.div`
-    a{
-        color: #ffffff;
-        transition: 0.25s ease-in-out;
-        /* font-size: 1.1rem; */
-        margin-right: 0.3rem;
+    display: flex;
+    a:nth-child(1){
+        margin-right: 1rem;
     }
+    a{
+        transition: 0.25s ease-in-out;
+        height: 2rem;
+    }
+    /* svg{
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            width: 8rem;
+            height: 8rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            width: 12rem;
+            height: 12rem;
+        }
+    } */
 `;

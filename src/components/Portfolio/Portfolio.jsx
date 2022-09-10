@@ -1,7 +1,7 @@
 import { BsGithub } from 'react-icons/bs';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import { Card, ContentText, PortfolioContainer, PortfolioDiv, ProjectInfo, ProjectLinks, Projects, ProjectText } from './styles';
+import { Card, ContentText, PortfolioContainer, PortfolioDiv, ProjectImage, ProjectInfo, ProjectLinks, Projects, ProjectText } from './styles';
 import imgStartupPortfolio from '../../assets/img/startup portfolio.png';
 import imgMarvelCharacters from '../../assets/img/marvel characters.png';
 import imgIntroSectionWithDropdownNavigation from '../../assets/img/intro section with dropdown navigation.png';
@@ -19,7 +19,7 @@ const Portfolio = () => {
         </ContentText>
         <Projects>
           <Card>
-            <img 
+            <ProjectImage 
               src={imgStartupPortfolio}
               alt="Startup portfolio image"
             />
@@ -47,144 +47,144 @@ const Portfolio = () => {
             </ProjectInfo>
           </Card>
           <Card>
-            <img 
+            <ProjectImage 
               src={imgMarvelCharacters}
-              alt='Image of marvel characters'
+              alt="Image of marvel characters"
             />
             <ProjectInfo>
               <ProjectText>
                 <h3>Marvel characters</h3>
-                <p>CSS3, JavaScript</p>
+                <p>HTML5, CSS3, JavaScript</p>
               </ProjectText>
-              <div>
+              <ProjectLinks>
                 <a 
                   href="https://github.com/AndreDev12/marvel-characters"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsGithub color="#f0f6fc" size="3rem" />
+                  <BsGithub color="#f0f6fc" size="2rem" />
                 </a>
                 <a
                   href="https://marvel-characters-challenge.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaExternalLinkAlt color="#f0f6fc" size="3rem" />
+                  <FaExternalLinkAlt color="#f0f6fc" size="2rem" />
                 </a>
-              </div>
+              </ProjectLinks>
             </ProjectInfo>
           </Card>
           <Card>
-            <img 
+            <ProjectImage 
               src={imgIntroSectionWithDropdownNavigation}
-              alt='Image of intro section with dropdown navigation'
+              alt="Image of intro section with dropdown navigation"
             />
             <ProjectInfo>
               <ProjectText>
                 <h3>Intro section with dropdown navigation</h3>
                 <p>JavaScript, Sass</p>
               </ProjectText>
-              <div>
+              <ProjectLinks>
                 <a 
                   href="https://github.com/AndreDev12/intro-section-with-dropdown-navigation"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsGithub color="#f0f6fc" size="3rem" />
+                  <BsGithub color="#f0f6fc" size="2rem" />
                 </a>
                 <a
                   href="https://intro-section-with-dropdown-navigation-puce.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaExternalLinkAlt color="#f0f6fc" size="3rem" />
+                  <FaExternalLinkAlt color="#f0f6fc" size="2rem" />
                 </a>
-              </div>
+              </ProjectLinks>
             </ProjectInfo>
           </Card>
           <Card>
-            <img 
+            <ProjectImage 
               src={imgIntroComponentWithSignupForm}
-              alt='Image of intro component with signup form'
+              alt="Image of intro component with signup form"
             />
-            <div>
-              <div>
+            <ProjectInfo>
+              <ProjectText>
                 <h3>Intro component with signup form</h3>
                 <p>CSS3, React</p>
-              </div>
-              <div>
+              </ProjectText>
+              <ProjectLinks>
                 <a 
                   href="https://github.com/AndreDev12/intro-component-with-signup-form"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsGithub color="#f0f6fc" size="3rem" />
+                  <BsGithub color="#f0f6fc" size="2rem" />
                 </a>
                 <a
                   href="https://intro-component-with-signup-form-mu-three.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaExternalLinkAlt color="#f0f6fc" size="3rem" />
+                  <FaExternalLinkAlt color="#f0f6fc" size="2rem" />
                 </a>
-              </div>
-            </div>
+              </ProjectLinks>
+            </ProjectInfo>
           </Card>
           <Card>
-            <img 
+            <ProjectImage 
               src={imgIpAddressTracker}
-              alt='Image of ip address tracker'
+              alt="Image of ip address tracker"
             />
-            <div>
-              <div>
+            <ProjectInfo>
+              <ProjectText>
                 <h3>Ip address tracker</h3>
                 <p>Sass, React</p>
-              </div>
-              <div>
+              </ProjectText>
+              <ProjectLinks>
                 <a 
                   href="https://github.com/AndreDev12/ip-address-tracker"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsGithub color="#f0f6fc" size="3rem" />
+                  <BsGithub color="#f0f6fc" size="2rem" />
                 </a>
                 <a
                   href="https://ip-address-tracker-neon-psi.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaExternalLinkAlt color="#f0f6fc" size="3rem" />
+                  <FaExternalLinkAlt color="#f0f6fc" size="2rem" />
                 </a>
-              </div>
-            </div>
+              </ProjectLinks>
+            </ProjectInfo>
           </Card>
           <Card>
-            <img 
+            <ProjectImage 
               src={imgRestCountriesApiWithColorThemeSwitcher}
-              alt='Image of rest countries api with color theme switcher'
+              alt="Image of rest countries api with color theme switcher"
             />
-            <div>
-              <div>
+            <ProjectInfo>
+              <ProjectText>
                 <h3>Rest countries api with color theme switcher</h3>
                 <p>Sass, React</p>
-              </div>
-              <div>
+              </ProjectText>
+              <ProjectLinks>
                 <a 
                   href="https://github.com/AndreDev12/rest-countries-api-with-color-theme-switcher"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BsGithub color="#f0f6fc" size="3rem" />
+                  <BsGithub color="#f0f6fc" size="2rem" />
                 </a>
                 <a
                   href="https://rest-countries-api-with-color-theme-switcher-seven-theta.vercel.app/countries"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaExternalLinkAlt color="#f0f6fc" size="3rem" />
+                  <FaExternalLinkAlt color="#f0f6fc" size="2rem" />
                 </a>
-              </div>
-            </div>
+              </ProjectLinks>
+            </ProjectInfo>
           </Card>
         </Projects>
       </PortfolioDiv>
