@@ -13,7 +13,14 @@ export const HomeDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 3rem;
+    row-gap: 4rem;
+    /* @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        flex-direction: row;
+    } */
+    /* @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        width: 12rem;
+        height: 12rem;
+    } */
     > div{
         margin: 0 auto;
     }
@@ -27,12 +34,15 @@ const bounce = keyframes`
     to{
         transform: translateY(-1rem);
     } 
-`;
+`; 
 
 export const Picture = styled.img`
     width: 15rem;
     border-radius: 50%;
-    animation: ${bounce} 1s alternate infinite;
+    /* animation: ${bounce} 1s alternate infinite; */
+    /* @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        order: 1;
+    } */
 `;
 
 export const NameContainer = styled.div`
@@ -75,7 +85,8 @@ export const AboutDiv = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
-    padding-block: 3rem;
+    /* padding-block: 3rem; */
+    padding-bottom: 3rem;
 `;
 
 export const Presentation = styled.div`

@@ -1,3 +1,4 @@
+import { IconContext } from 'react-icons';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -9,31 +10,33 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <HeaderContainer>
-      <div>
+    <IconContext.Provider value={{ color:"#FFFFFF", size:"3rem" }}>
+      <HeaderContainer>
         <div>
-          <Logo>
-            <Link to="/">
-              <img src={logo} alt="Portfolio logo" />
-            </Link>
-          </Logo>
-          <MenuButton onClick={() => setToggle(!toggle)}>
-            {
-              toggle ? 
-              <FaTimes color="#FFFFFF" size="3rem" /> :
-              <FaBars color="#FFFFFF" size="3rem" />
-            }
-          </MenuButton>
-          <Nav toggle={toggle}>
-            <ul>
-              <ListItem><Link to="/">Home</Link></ListItem>
-              <ListItem><Link to="about">About</Link></ListItem>
-              <ListItem><Link to="portfolio">Portfolio</Link></ListItem>
-            </ul>
-          </Nav>
+          <div>
+            <Logo>
+              <Link to="/">
+                <img src={logo} alt="Portfolio logo" />
+              </Link>
+            </Logo>
+            <MenuButton onClick={() => setToggle(!toggle)}>
+              {
+                toggle ? 
+                <FaTimes /> :
+                <FaBars />
+              }
+            </MenuButton>
+            <Nav toggle={toggle}>
+              <ul>
+                <ListItem><Link to="/">Home</Link></ListItem>
+                <ListItem><Link to="about">About</Link></ListItem>
+                <ListItem><Link to="portfolio">Portfolio</Link></ListItem>
+              </ul>
+            </Nav>
+          </div>
         </div>
-      </div>
-    </HeaderContainer>
+      </HeaderContainer>
+    </IconContext.Provider>
   )
 }
 
