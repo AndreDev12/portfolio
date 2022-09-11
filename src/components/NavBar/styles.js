@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
         width: 90%;
         margin: 0 auto;
         max-width: 1400px;
-        div{
+        > div{
             display: flex;
             height: 100%;
             justify-content: space-between;
@@ -37,25 +37,35 @@ export const Logo = styled.div`
 
 export const MenuButton = styled.div`
     flex-basis: 3rem;
-    height: 100%;
+    height: 3rem;
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        display: none;
+    }
 `;
 
 export const Nav = styled.nav`
-    background-color: ${({theme}) => theme.colors.black};
-    height: calc(100vh - 5rem);
-    max-width: 25rem;
-    position: fixed;
-    right: 0;
-    top: 5rem;
-    transform: ${({toggle}) => toggle ? "translateX(0%)" : "translateX(100%)"};
-    transition: all .3s;
-    width: ${({toggle}) => toggle ? "100%" : "0%"};
-    z-index: 10;
+    @media(max-width: 767px){
+        background-color: ${({theme}) => theme.colors.black};
+        height: calc(100vh - 5rem);
+        max-width: 25rem;
+        position: fixed;
+        right: 0;
+        top: 5rem;
+        transform: ${({toggle}) => toggle ? "translateX(0%)" : "translateX(100%)"};
+        transition: all .3s;
+        width: ${({toggle}) => toggle ? "100%" : "0%"};
+        z-index: 10;
+    }
     li:nth-child(1){
         border-top: .1rem solid ${({theme}) => theme.colors.darkPurple};
     }
     li:not(:nth-child(1)){
         border-top: .1rem solid ${({theme}) => theme.colors.purple};
+    }
+    ul{
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            display: flex;
+        }
     }
 `;
 

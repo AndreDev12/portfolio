@@ -22,10 +22,10 @@ export const ContentText = styled.div`
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     p{
-        margin: 0 0 2rem;
+        margin: 0 0 3rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;
@@ -36,8 +36,8 @@ export const ContentText = styled.div`
 export const Projects = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(25rem, auto);
     grid-gap: 1.5rem;
+    grid-auto-rows: 25rem;
 `;
 
 export const Card = styled.div`

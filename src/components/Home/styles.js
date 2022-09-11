@@ -95,7 +95,7 @@ export const Presentation = styled.div`
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     p{
         margin: 0 0 2rem;
@@ -115,7 +115,7 @@ export const Contact = styled.div`
         margin-bottom: 1rem;
     }
     p{
-        margin: 0 0 2rem;
+        margin: 0 0 1rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;

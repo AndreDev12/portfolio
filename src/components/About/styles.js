@@ -15,7 +15,7 @@ export const AboutDiv = styled.div`
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     p{
         margin: 0 0 2rem;
@@ -36,7 +36,7 @@ export const Skills = styled.div`
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     ul{
         display: grid;
