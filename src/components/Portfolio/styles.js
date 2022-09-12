@@ -12,8 +12,9 @@ export const PortfolioDiv = styled.div`
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
-    /* height: 60vh; */
-    /* height: 100vh; */
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        padding-top: 13rem;
+    }
 `;
 
 export const ContentText = styled.div`
@@ -23,6 +24,9 @@ export const ContentText = styled.div`
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
         margin-bottom: 1rem;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            font-size: 3rem;
+        }
     }
     p{
         margin: 0 0 3rem;
@@ -30,14 +34,20 @@ export const ContentText = styled.div`
         font-size: 1.8rem;
         line-height: 1.3;
         text-align: center;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            font-size: 2rem;
+        }
     }
 `;
 
 export const Projects = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
+    gap: 1.5rem;
     grid-auto-rows: 25rem;
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        grid-template-columns: repeat(2, 1fr);
+    }
 `;
 
 export const Card = styled.div`
@@ -105,14 +115,4 @@ export const ProjectLinks = styled.div`
         transition: 0.25s ease-in-out;
         height: 2rem;
     }
-    /* svg{
-        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            width: 8rem;
-            height: 8rem;
-        }
-        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
-            width: 12rem;
-            height: 12rem;
-        }
-    } */
 `;

@@ -10,38 +10,57 @@ export const AboutDiv = styled.div`
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 11rem;
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        height: 56vh;
+        padding-top: 13rem;
+    }
     h1{
         text-align: center;
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
         margin-bottom: 1rem;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            font-size: 3rem;
+        }
     }
     p{
-        margin: 0 0 2rem;
+        margin: 0 0 1rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;
         text-align: justify;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            font-size: 2rem;
+        }
     }
 `;
 
 export const Skills = styled.div`
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
     padding-block: 3rem;
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        padding-bottom: 5rem;
+    }
     h2{
         text-align: center;
         text-transform: uppercase;
         font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
         margin-bottom: 1rem;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            font-size: 3rem;
+        }
     }
     ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 `;
 
@@ -52,14 +71,13 @@ export const ListItem = styled.li`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* svg{
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        font-size: 2rem;
+    }
+    svg{
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            width: 8rem;
-            height: 8rem;
+            height: 7rem;
+            width: 7rem;
         }
-        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
-            width: 12rem;
-            height: 12rem;
-        }
-    } */
+    }    
 `;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    /* height: 100vh; */
     width: 100%;
     position: fixed;
     z-index: 20;
@@ -10,7 +9,6 @@ export const HeaderContainer = styled.header`
     > div{
         width: 100%;
         height: 5rem;
-        /* padding: 1rem; */
         width: 95%;
         margin: 0 auto;
         max-width: 1200px;
@@ -105,7 +103,8 @@ export const ListItem = styled.li`
             margin-left: 1.5rem;
             position: relative;
             @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-                margin-left: 0; 
+                font-size: 1.8rem;
+                margin-left: 0;
             }
             &:hover{
                 color: ${({theme}) => theme.colors.purpleLight};

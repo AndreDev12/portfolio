@@ -20,7 +20,6 @@ export const GlobalStyle = createGlobalStyle`
   body{
     background-color: ${({theme}) => theme.colors.darkBlue};
     font-family: ${({theme}) => theme.fonts.family};
-    /* position: relative; */
   }
   
   #root{
@@ -63,11 +62,6 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  /* ul, ol{
-    margin: 0;
-    padding: 0;
-  } */
-
   p{
     margin: 1rem 0;
     font-size: 1rem;
@@ -77,10 +71,6 @@ export const GlobalStyle = createGlobalStyle`
   b{
     font-weight: bold;
   }
-
-  /* h1, h2, h3, h4, h5, h6{
-    margin: 0;
-  } */
 
   a{
     text-decoration: none;

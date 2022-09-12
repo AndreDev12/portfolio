@@ -84,7 +84,7 @@ const Portfolio = () => {
               <ProjectInfo>
                 <ProjectText>
                   <h3>Intro section with dropdown navigation</h3>
-                  <p>JavaScript, Sass</p>
+                  <p>JavaScript, SASS</p>
                 </ProjectText>
                 <ProjectLinks>
                   <a 
@@ -140,7 +140,7 @@ const Portfolio = () => {
               <ProjectInfo>
                 <ProjectText>
                   <h3>Ip address tracker</h3>
-                  <p>Sass, React</p>
+                  <p>SASS, React</p>
                 </ProjectText>
                 <ProjectLinks>
                   <a 
@@ -168,7 +168,7 @@ const Portfolio = () => {
               <ProjectInfo>
                 <ProjectText>
                   <h3>Rest countries api with color theme switcher</h3>
-                  <p>Sass, React</p>
+                  <p>SASS, React</p>
                 </ProjectText>
                 <ProjectLinks>
                   <a 

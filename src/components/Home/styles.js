@@ -18,10 +18,6 @@ export const HomeDiv = styled.div`
         flex-direction: row;
         column-gap: 10rem;
     }
-    /* @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
-        width: 12rem;
-        height: 12rem;
-    } */
     > div{
         margin: 0 auto;
     }
@@ -40,7 +36,6 @@ const bounce = keyframes`
 export const Picture = styled.img`
     width: 15rem;
     border-radius: 50%;
-    /* animation: ${bounce} 1s alternate infinite; */
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         order: 1;
         width: 20rem;
@@ -53,7 +48,7 @@ export const NameContainer = styled.div`
         color: ${({theme}) => theme.colors.purple};
         text-transform: uppercase;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
     h1{
@@ -120,7 +115,7 @@ export const Presentation = styled.div`
         } 
     }
     p{
-        margin: 0 0 2rem;
+        margin: 0 0 1rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;
