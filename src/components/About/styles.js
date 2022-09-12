@@ -6,9 +6,9 @@ export const AboutContainer = styled.div`
 
 export const AboutDiv = styled.div`
     height: 70vh;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
     padding-top: 11rem;
     h1{
         text-align: center;

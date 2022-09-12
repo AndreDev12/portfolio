@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-import { HeaderContainer, ListItem, Logo, MenuButton, Nav } from './styles';
+import { HeaderContainer, ListItem, Logo, MenuButton, Nav, UnorderedList } from './styles';
 import logo from '../../assets/logos/logo.svg';
 
 const NavBar = () => {
@@ -27,11 +27,11 @@ const NavBar = () => {
               }
             </MenuButton>
             <Nav toggle={toggle}>
-              <ul>
+              <UnorderedList>
                 <ListItem><Link to="/">Home</Link></ListItem>
                 <ListItem><Link to="about">About</Link></ListItem>
                 <ListItem><Link to="portfolio">Portfolio</Link></ListItem>
-              </ul>
+              </UnorderedList>
             </Nav>
           </div>
         </div>

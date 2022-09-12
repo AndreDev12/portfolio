@@ -11,9 +11,9 @@ export const HeaderContainer = styled.header`
         width: 100%;
         height: 5rem;
         /* padding: 1rem; */
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
-        max-width: 1400px;
+        max-width: 1200px;
         > div{
             display: flex;
             height: 100%;
@@ -56,15 +56,23 @@ export const Nav = styled.nav`
         width: ${({toggle}) => toggle ? "100%" : "0%"};
         z-index: 10;
     }
+`;
+
+export const UnorderedList = styled.ul`
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        display: flex;
+        justify-items: center;
+    }
     li:nth-child(1){
-        border-top: .1rem solid ${({theme}) => theme.colors.darkPurple};
+        border-top: 0.1rem solid ${({theme}) => theme.colors.darkPurple};
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            border-top-width: 0;
+        }
     }
     li:not(:nth-child(1)){
-        border-top: .1rem solid ${({theme}) => theme.colors.purple};
-    }
-    ul{
+        border-top: 0.1rem solid ${({theme}) => theme.colors.purple};
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            display: flex;
+            border-top-width: 0;
         }
     }
 `;
@@ -74,9 +82,19 @@ export const ListItem = styled.li`
     position: relative;
     transition: padding-left .3s;
     width: 100%;
+    @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        margin-left: 3rem;
+        letter-spacing: 0.08rem;
+    }
     &:hover{
         background-color: ${({theme}) => theme.colors.purple};
         padding-left: 1rem;
+        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+            padding-left: 0;
+        }
+        a::before{
+            transform: scale(1);
+        }
     }
         a{
             font-size: ${({theme}) => theme.fonts.sizes.md};
@@ -85,5 +103,24 @@ export const ListItem = styled.li`
             display: inline-block;
             line-height: 5rem;
             margin-left: 1.5rem;
+            position: relative;
+            @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+                margin-left: 0; 
+            }
+            &:hover{
+                color: ${({theme}) => theme.colors.purpleLight};
+            }
+            &::before{
+                @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+                    content: "";
+                    width: 100%;
+                    height: 0.2rem;
+                    background-color: ${({theme}) => theme.colors.purpleLight};
+                    position: absolute;
+                    bottom: 1.4rem;
+                    transition: transform 0.3s ease 0s;
+                    transform: scale(0);
+                }
+            }
         }
 `;

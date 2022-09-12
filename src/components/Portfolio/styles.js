@@ -5,9 +5,9 @@ export const PortfolioContainer = styled.div`
 `;
 
 export const PortfolioDiv = styled.div`
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
     padding-top: 11rem; 
     padding-bottom: 5rem;
     display: flex;
