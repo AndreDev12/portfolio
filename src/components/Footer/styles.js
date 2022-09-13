@@ -18,6 +18,9 @@ export const FooterDiv = styled.div`
         width: 100%;
         column-gap: 5rem;
     }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        margin: 0 auto;
+    }
     &>*{
         width: 100%;
         padding-block: 1rem;
@@ -29,9 +32,12 @@ export const FooterInformation = styled.div`
         font-size: 1.4rem;
         text-align: center;
         line-height: 1.2;
-        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        /* @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 1.6rem;
-        }
+        } */
+        /* @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 1.8rem;
+        } */
     }
 `;
 
@@ -39,19 +45,19 @@ export const Copyright = styled.div`
     h5{
         font-size: 1.4rem;
         text-align: center;
-        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        /* @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 1.6rem;
-        }
+        } */
     }
 `;
 
 export const FooterSocialNetwork = styled.div`
     display: flex;
     justify-content: space-evenly;
-    svg{
+    /* svg{
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             height: 2.2rem;
             width: 2.2rem;
         }
-    }
+    } */
 `;

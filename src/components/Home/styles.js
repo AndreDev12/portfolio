@@ -18,20 +18,13 @@ export const HomeDiv = styled.div`
         flex-direction: row;
         column-gap: 10rem;
     }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        column-gap: 20rem;
+    }
     > div{
         margin: 0 auto;
     }
 `;
-
-const bounce = keyframes`
-    from{
-        transform: translateY(0rem);
-    }
-  
-    to{
-        transform: translateY(-1rem);
-    } 
-`; 
 
 export const Picture = styled.img`
     width: 15rem;
@@ -39,6 +32,9 @@ export const Picture = styled.img`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         order: 1;
         width: 20rem;
+    }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        width: 25rem;
     }
 `;
 
@@ -50,6 +46,9 @@ export const NameContainer = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 1.8rem;
         }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 2rem;
+        }
     }
     h1{
         font-size: ${({theme}) => theme.fonts.sizes.test4};
@@ -57,6 +56,9 @@ export const NameContainer = styled.div`
         text-transform: uppercase;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 4.2rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 4.7rem;
         }
     }
 `;
@@ -69,6 +71,9 @@ export const Specialty = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+        }
     }
     span{
         font-size: ${({theme}) => theme.fonts.sizes.test3};
@@ -76,6 +81,9 @@ export const Specialty = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         } 
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+        }
     }
 `;
 
@@ -88,6 +96,9 @@ export const Paragraph = styled.p`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         font-size: 2rem;
     } 
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        font-size: 2.2rem;
+    }
 `;
 
 export const AboutDiv = styled.div`
@@ -101,6 +112,9 @@ export const AboutDiv = styled.div`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         padding-bottom: 6rem;
     } 
+    /* @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        padding-bottom: 7rem;
+    } */
 `;
 
 export const Presentation = styled.div`
@@ -113,6 +127,9 @@ export const Presentation = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         } 
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+        }
     }
     p{
         margin: 0 0 1rem;
@@ -122,6 +139,9 @@ export const Presentation = styled.div`
         text-align: justify;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 2.2rem;
         }
     }
 `;
@@ -136,6 +156,9 @@ export const Contact = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         } 
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+        }
     }
     p{
         margin: 0 0 1rem;
@@ -145,6 +168,9 @@ export const Contact = styled.div`
         text-align: center;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 2.2rem;
         }
     }
 `;
@@ -156,6 +182,10 @@ export const SocialNetworks = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             height: 4rem;
             width: 4rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            height: 5rem;
+            width: 5rem;
         }
     }
 `;

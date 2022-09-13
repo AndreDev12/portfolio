@@ -14,6 +14,9 @@ export const AboutDiv = styled.div`
         height: 56vh;
         padding-top: 13rem;
     }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        height: 40vh;
+    }
     h1{
         text-align: center;
         text-transform: uppercase;
@@ -22,6 +25,10 @@ export const AboutDiv = styled.div`
         margin-bottom: 1rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
         }
     }
     p{
@@ -32,6 +39,9 @@ export const AboutDiv = styled.div`
         text-align: justify;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 2.2rem;
         }
     }
 `;
@@ -44,6 +54,9 @@ export const Skills = styled.div`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         padding-bottom: 5rem;
     }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        padding-bottom: 35rem;
+    }
     h2{
         text-align: center;
         text-transform: uppercase;
@@ -52,6 +65,10 @@ export const Skills = styled.div`
         margin-bottom: 1rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
         }
     }
     ul{
@@ -74,10 +91,17 @@ export const ListItem = styled.li`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         font-size: 2rem;
     }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        font-size: 2.2rem;
+    }
     svg{
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             height: 7rem;
             width: 7rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            height: 8rem;
+            width: 8rem;
         }
     }    
 `;

@@ -23,7 +23,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Logo = styled.div`
-    min-height: 3rem;
+    /* min-height: 3rem; */
     display: block;
     flex-basis: 15rem;
     a{
@@ -60,6 +60,8 @@ export const UnorderedList = styled.ul`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         display: flex;
         justify-items: center;
+        /* height: 3rem; */
+        align-items: center;
     }
     li:nth-child(1){
         border-top: 0.1rem solid ${({theme}) => theme.colors.darkPurple};
@@ -81,8 +83,10 @@ export const ListItem = styled.li`
     transition: padding-left .3s;
     width: 100%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        line-height: 3rem;
         margin-left: 3rem;
         letter-spacing: 0.08rem;
+        height: 3rem;
     }
     &:hover{
         background-color: ${({theme}) => theme.colors.purple};
@@ -105,9 +109,12 @@ export const ListItem = styled.li`
             @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
                 font-size: 1.8rem;
                 margin-left: 0;
+                line-height: unset;
             }
             &:hover{
-                color: ${({theme}) => theme.colors.purpleLight};
+                @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+                    color: ${({theme}) => theme.colors.purpleLight};
+                }
             }
             &::before{
                 @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
@@ -116,9 +123,9 @@ export const ListItem = styled.li`
                     height: 0.2rem;
                     background-color: ${({theme}) => theme.colors.purpleLight};
                     position: absolute;
-                    bottom: 1.4rem;
                     transition: transform 0.3s ease 0s;
                     transform: scale(0);
+                    bottom: 0.2rem;
                 }
             }
         }
