@@ -15,6 +15,9 @@ export const PortfolioDiv = styled.div`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         padding-top: 13rem;
     }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        padding-bottom: 35rem;
+    }
 `;
 
 export const ContentText = styled.div`
@@ -27,6 +30,10 @@ export const ContentText = styled.div`
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
     }
     p{
         margin: 0 0 3rem;
@@ -36,6 +43,9 @@ export const ContentText = styled.div`
         text-align: center;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;
+        }
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            font-size: 2.2rem;
         }
     }
 `;
@@ -47,6 +57,9 @@ export const Projects = styled.div`
     grid-auto-rows: 25rem;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        grid-template-columns: repeat(3, 1fr);
     }
 `;
 
@@ -68,6 +81,9 @@ export const Card = styled.div`
         position: absolute;
         transition: opacity .3s .2s;
         width: 100%;
+        @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+            border-radius: 1rem;
+        }
     }
     &:hover div{
         opacity: 1;
@@ -77,6 +93,9 @@ export const Card = styled.div`
 export const ProjectImage = styled.img`
     border-radius: 0.5rem;
     height: 100%;
+    @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
+        border-radius: 1rem;
+    }
 `;
 
 export const ProjectInfo = styled.div`
