@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
 
   *, *::before, *::after{
     box-sizing: inherit;
-    /* scroll-behavior: smooth; */
   }
 
   *{
@@ -48,32 +47,18 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
   }
 
-  button{
-    border-radius: 0;
-    border: none;
-    font-weight: 700;
-    background-color: transparent;
-    &:focus{
-      outline: none;
-    }
-  }
-
   li{
     list-style: none;
   }
 
   p{
-    margin: 1rem 0;
     font-size: 1rem;
     line-height: 1.7rem;
-  }
-
-  b{
-    font-weight: bold;
+    margin: 1rem 0;
   }
 
   a{
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
   }
 `;

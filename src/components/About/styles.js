@@ -6,10 +6,10 @@ export const AboutContainer = styled.div`
 
 export const AboutDiv = styled.div`
     height: 70vh;
-    width: 95%;
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 11rem;
+    width: 95%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         height: 56vh;
         padding-top: 13rem;
@@ -18,11 +18,11 @@ export const AboutDiv = styled.div`
         height: 40vh;
     }
     h1{
+        color: ${({theme}) => theme.colors.purple};
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
         text-align: center;
         text-transform: uppercase;
-        font-size: ${({theme}) => theme.fonts.sizes.test3};
-        color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 1rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         }
@@ -32,10 +32,10 @@ export const AboutDiv = styled.div`
         }
     }
     p{
-        margin: 0 0 1rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;
+        margin: 0 0 1rem;
         text-align: justify;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;
@@ -47,10 +47,10 @@ export const AboutDiv = styled.div`
 `;
 
 export const Skills = styled.div`
-    width: 95%;
     margin: 0 auto;
     max-width: 1200px;
     padding-block: 3rem;
+    width: 95%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         padding-bottom: 5rem;
     }
@@ -58,11 +58,11 @@ export const Skills = styled.div`
         padding-bottom: 35rem;
     }
     h2{
+        color: ${({theme}) => theme.colors.purple};
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
         text-align: center;
         text-transform: uppercase;
-        font-size: ${({theme}) => theme.fonts.sizes.test3};
-        color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 1rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         }
@@ -73,8 +73,8 @@ export const Skills = styled.div`
     }
     ul{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             grid-template-columns: repeat(3, 1fr);
         }
@@ -82,11 +82,11 @@ export const Skills = styled.div`
 `;
 
 export const ListItem = styled.li`
+    align-items: center;
     color: ${({theme}) => theme.colors.gray};
-    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: 1.8rem;
     text-align: center;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         font-size: 2rem;

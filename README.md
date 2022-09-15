@@ -2,13 +2,15 @@
   Portfolio website<br/>
   <a href="" target="_blank"></a>
 </h1>
+<div align="center">
+  <img alt="Portfolio image" src="./src/assets/img/portfolio image.png" />
+</div>
 
 <br/>
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -17,8 +19,6 @@
 - [Author](#author)
 
 ## Overview
-
-### Screenshot
 
 ### Links
 
@@ -31,8 +31,8 @@
 
 - [React](https://reactjs.org/) - JS library
 - [Styled-components](https://styled-components.com/) - Library built for React
-- [typed.js](https://www.npmjs.com/package/typed.js) - Library that types
-- [react-icons](https://www.npmjs.com/package/react-icons) - Library
+- [Typed.js](https://www.npmjs.com/package/typed.js) - Library that types
+- [React-icons](https://www.npmjs.com/package/react-icons) - Library
 
 ## Getting started
 
@@ -51,3 +51,5 @@ The page will reload if you make edits.
 ## Author
 
 - LinkedIn - [Héctor André Huambachano Torres](https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-huambachano-torres/)
+- Twitter - [@HectorAndreHT](https://twitter.com/HectorAndreHT)
+- Website []()

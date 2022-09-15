@@ -35,7 +35,10 @@ const Home = () => {
     <IconContext.Provider value={{ size: "3rem" }}>
       <HomeContainer>
         <HomeDiv>
-          <Picture src={profilePicture} alt="Profile picture" />
+          <Picture 
+            src={profilePicture}
+            alt="Profile picture" 
+          />
           <div>
             <NameContainer>
               <h2>Hi, my name is</h2>

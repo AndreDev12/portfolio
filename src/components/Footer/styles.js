@@ -6,38 +6,32 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterDiv = styled.div`
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
+    color: ${({theme}) => theme.colors.white};
     display: flex;
     flex-wrap: wrap;
-    color: ${({theme}) => theme.colors.white};
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        column-gap: 5rem;
         flex-wrap: nowrap;
         margin: 0;
         width: 100%;
-        column-gap: 5rem;
     }
     @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
         margin: 0 auto;
     }
     &>*{
-        width: 100%;
         padding-block: 1rem;
+        width: 100%;
     }
 `;
 
 export const FooterInformation = styled.div`
     h5{
         font-size: 1.4rem;
-        text-align: center;
         line-height: 1.2;
-        /* @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            font-size: 1.6rem;
-        } */
-        /* @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
-            font-size: 1.8rem;
-        } */
+        text-align: center;
     }
 `;
 
@@ -45,19 +39,10 @@ export const Copyright = styled.div`
     h5{
         font-size: 1.4rem;
         text-align: center;
-        /* @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            font-size: 1.6rem;
-        } */
     }
 `;
 
 export const FooterSocialNetwork = styled.div`
     display: flex;
     justify-content: space-evenly;
-    /* svg{
-        @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-            height: 2.2rem;
-            width: 2.2rem;
-        }
-    } */
 `;

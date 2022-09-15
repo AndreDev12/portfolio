@@ -1,35 +1,33 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    width: 100%;
-    position: fixed;
-    z-index: 20;
     background-color: ${({theme}) => theme.colors.purple};
     border-bottom: 0.1rem solid ${({theme}) => theme.colors.darkPurple};
+    position: fixed;
+    width: 100%;
+    z-index: 20;
     > div{
-        width: 100%;
         height: 5rem;
-        width: 95%;
         margin: 0 auto;
         max-width: 1200px;
+        width: 95%;
         > div{
+            align-items: center;
             display: flex;
             height: 100%;
             justify-content: space-between;
             width: 100%;
-            align-items: center;
         }
     }
 `;
 
 export const Logo = styled.div`
-    /* min-height: 3rem; */
     display: block;
     flex-basis: 15rem;
     a{
-        width: 100%;
         display: flex;
         height: 100%;
+        width: 100%;
     }
 `;
 
@@ -39,6 +37,25 @@ export const MenuButton = styled.div`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         display: none;
     }
+    &:hover.active span:nth-child(1){
+        transform: translateY(0.6rem) rotate(45deg);
+    }
+    &:hover.active span:nth-child(2){
+        opacity: 0;
+    }
+    &:hover.active span:nth-child(3){
+        transform: translateY(-0.8rem) rotate(-45deg);
+    }
+`;
+
+export const Span = styled.span`
+    background-color: ${({theme}) => theme.colors.white};
+    border-radius: 3rem;
+    display: block;
+    height: 0.3rem;
+    margin: 0.4rem auto;
+    transition: all 0.3s ease-in-out;
+    width: 2.3rem;
 `;
 
 export const Nav = styled.nav`
@@ -58,10 +75,9 @@ export const Nav = styled.nav`
 
 export const UnorderedList = styled.ul`
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        align-items: center;
         display: flex;
         justify-items: center;
-        /* height: 3rem; */
-        align-items: center;
     }
     li:nth-child(1){
         border-top: 0.1rem solid ${({theme}) => theme.colors.darkPurple};
@@ -83,10 +99,10 @@ export const ListItem = styled.li`
     transition: padding-left .3s;
     width: 100%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
+        height: 3rem;
+        letter-spacing: 0.08rem;
         line-height: 3rem;
         margin-left: 3rem;
-        letter-spacing: 0.08rem;
-        height: 3rem;
     }
     &:hover{
         background-color: ${({theme}) => theme.colors.purple};
@@ -99,17 +115,17 @@ export const ListItem = styled.li`
         }
     }
         a{
-            font-size: ${({theme}) => theme.fonts.sizes.md};
             color: ${({theme}) => theme.colors.white};
-            width: 100%;
             display: inline-block;
+            font-size: 1.6rem;
             line-height: 5rem;
             margin-left: 1.5rem;
             position: relative;
+            width: 100%;
             @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
                 font-size: 1.8rem;
-                margin-left: 0;
                 line-height: unset;
+                margin-left: 0;
             }
             &:hover{
                 @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
@@ -118,14 +134,14 @@ export const ListItem = styled.li`
             }
             &::before{
                 @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-                    content: "";
-                    width: 100%;
-                    height: 0.2rem;
                     background-color: ${({theme}) => theme.colors.purpleLight};
-                    position: absolute;
-                    transition: transform 0.3s ease 0s;
-                    transform: scale(0);
                     bottom: 0.2rem;
+                    content: "";
+                    height: 0.2rem;
+                    position: absolute;
+                    transform: scale(0);
+                    transition: transform 0.3s ease 0s;
+                    width: 100%;
                 }
             }
         }

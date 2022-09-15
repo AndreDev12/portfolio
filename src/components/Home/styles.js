@@ -1,22 +1,22 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
     width: 100%;
 `;
 
 export const HomeDiv = styled.div`
-    height: 100vh;
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
     row-gap: 4rem;
+    width: 95%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
-        flex-direction: row;
         column-gap: 10rem;
+        flex-direction: row;
     }
     @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
         column-gap: 20rem;
@@ -27,8 +27,8 @@ export const HomeDiv = styled.div`
 `;
 
 export const Picture = styled.img`
-    width: 15rem;
     border-radius: 50%;
+    width: 15rem;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         order: 1;
         width: 20rem;
@@ -40,8 +40,8 @@ export const Picture = styled.img`
 
 export const NameContainer = styled.div`
     h2{
-        font-size: ${({theme}) => theme.fonts.sizes.test1};
         color: ${({theme}) => theme.colors.purple};
+        font-size: 1.6rem;
         text-transform: uppercase;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 1.8rem;
@@ -51,8 +51,8 @@ export const NameContainer = styled.div`
         }
     }
     h1{
-        font-size: ${({theme}) => theme.fonts.sizes.test4};
         color: ${({theme}) => theme.colors.white};
+        font-size: 3.7rem;
         text-transform: uppercase;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 4.2rem;
@@ -66,8 +66,8 @@ export const NameContainer = styled.div`
 export const Specialty = styled.div`
     margin-top: 2rem;
     h3{
-        font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.white};
+        font-size: 2.5rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         }
@@ -76,8 +76,8 @@ export const Specialty = styled.div`
         }
     }
     span{
-        font-size: ${({theme}) => theme.fonts.sizes.test3};
         color: ${({theme}) => theme.colors.purple};
+        font-size: 2.5rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         } 
@@ -88,10 +88,10 @@ export const Specialty = styled.div`
 `;
 
 export const Paragraph = styled.p`
-    margin-block: 2rem 0;
     color: ${({theme}) => theme.colors.gray};
-    font-size: ${({theme}) => theme.fonts.sizes.test2};
+    font-size: 1.8rem;
     line-height: 1.3;
+    margin-block: 2rem 0;
     text-align: justify;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         font-size: 2rem;
@@ -102,28 +102,25 @@ export const Paragraph = styled.p`
 `;
 
 export const AboutDiv = styled.div`
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    margin: 0 auto;
+    max-width: 1200px;
     padding-bottom: 3rem;
+    row-gap: 4rem;
+    width: 95%;
     @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
         padding-bottom: 6rem;
     } 
-    /* @media(min-width: ${({theme}) => theme.breakpoints.desktop}){
-        padding-bottom: 7rem;
-    } */
 `;
 
 export const Presentation = styled.div`
     h4{
+        color: ${({theme}) => theme.colors.purple};
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
         text-align: center;
         text-transform: uppercase;
-        font-size: ${({theme}) => theme.fonts.sizes.test3};
-        color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 1rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         } 
@@ -132,10 +129,10 @@ export const Presentation = styled.div`
         }
     }
     p{
-        margin: 0 0 1rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;
+        margin: 0 0 1rem;
         text-align: justify;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;
@@ -148,11 +145,11 @@ export const Presentation = styled.div`
 
 export const Contact = styled.div`
     h4{
+        color: ${({theme}) => theme.colors.purple};
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
         text-align: center;
         text-transform: uppercase;
-        font-size: ${({theme}) => theme.fonts.sizes.test3};
-        color: ${({theme}) => theme.colors.purple};
-        margin-bottom: 1rem;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 3rem;
         } 
@@ -161,10 +158,10 @@ export const Contact = styled.div`
         }
     }
     p{
-        margin: 0 0 1rem;
         color: ${({theme}) => theme.colors.gray};
         font-size: 1.8rem;
         line-height: 1.3;
+        margin: 0 0 1rem;
         text-align: center;
         @media(min-width: ${({theme}) => theme.breakpoints.tablet}){
             font-size: 2rem;

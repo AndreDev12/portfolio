@@ -1,9 +1,8 @@
 import { IconContext } from 'react-icons';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
 
-import { HeaderContainer, ListItem, Logo, MenuButton, Nav, UnorderedList } from './styles';
+import { HeaderContainer, ListItem, Logo, MenuButton, Nav, Span, UnorderedList } from './styles';
 import logo from '../../assets/logos/logo.svg';
 
 const NavBar = () => {
@@ -16,21 +15,46 @@ const NavBar = () => {
           <div>
             <Logo>
               <Link to="/">
-                <img src={logo} alt="Portfolio logo" />
+                <img 
+                  src={logo}
+                  alt="Portfolio logo" 
+                />
               </Link>
             </Logo>
-            <MenuButton onClick={() => setToggle(!toggle)}>
-              {
-                toggle ? 
-                <FaTimes /> :
-                <FaBars />
-              }
+            <MenuButton 
+              onClick={() => setToggle(!toggle)}
+              className= {toggle && "active"}
+            >
+              <Span></Span>
+              <Span></Span>
+              <Span></Span>
             </MenuButton>
             <Nav toggle={toggle}>
               <UnorderedList>
-                <ListItem><Link to="/">Home</Link></ListItem>
-                <ListItem><Link to="about">About</Link></ListItem>
-                <ListItem><Link to="portfolio">Portfolio</Link></ListItem>
+                <ListItem>
+                  <Link 
+                    to="/"
+                    onClick={() => setToggle(!toggle)}
+                  >
+                    Home
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link 
+                    to="about"
+                    onClick={() => setToggle(!toggle)}
+                  >
+                    About
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    to="portfolio"
+                    onClick={() => setToggle(!toggle)}
+                  >
+                    Portfolio
+                  </Link>
+                </ListItem>
               </UnorderedList>
             </Nav>
           </div>
