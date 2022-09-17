@@ -1,6 +1,6 @@
 <h1 align="center">
   Portfolio website<br/>
-  <a href="" target="_blank"></a>
+  <a href="https://andredev.vercel.app/" target="_blank">andredev</a>
 </h1>
 <div align="center">
   <img alt="Portfolio image" src="./src/assets/img/portfolio image.png" />
@@ -23,7 +23,7 @@
 ### Links
 
 - Solution URL: [GitHub](https://github.com/AndreDev12/portfolio)
-- Live Site URL: [Vercel]()
+- Live Site URL: [Vercel](https://andredev.vercel.app/)
 
 ## My process
 
@@ -45,11 +45,10 @@
 3. In the project directory, you can run: `npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 The page will reload if you make edits.
 
 ## Author
 
 - LinkedIn - [Héctor André Huambachano Torres](https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-huambachano-torres/)
 - Twitter - [@HectorAndreHT](https://twitter.com/HectorAndreHT)
-- Website []()
