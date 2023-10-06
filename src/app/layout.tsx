@@ -8,7 +8,8 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   title: 'AndreDev',
-  description: '',
+  description:
+    'Portafolio construido con Next.js, TypeScript, MUI, Tailwind CSS y Redux.',
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={ubuntu.className}>
         <div id="root">{children}</div>
       </body>

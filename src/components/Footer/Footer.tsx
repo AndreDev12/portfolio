@@ -2,14 +2,20 @@ import { IconContext } from 'react-icons';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
 
-import { Copyright, FooterContainer, FooterDiv, FooterInformation, FooterSocialNetwork } from './styles';
+import {
+  Copyright,
+  FooterContainer,
+  FooterDiv,
+  FooterInformation,
+  FooterSocialNetwork,
+} from './styles';
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
 
   return (
-    <IconContext.Provider value={{ size: "2rem" }}>
+    <IconContext.Provider value={{ size: '2rem' }}>
       <FooterContainer>
         <FooterDiv>
           <FooterInformation>
@@ -19,21 +25,21 @@ const Footer = () => {
             <h5>Copyright © {year} AndreDev</h5>
           </Copyright>
           <FooterSocialNetwork>
-            <a 
+            <a
               href="https://github.com/AndreDev12"
               target="_blank"
               rel="noopener noreferrer"
             >
               <BsGithub color="#F0F6FC" />
             </a>
-            <a 
+            <a
               href="https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-huambachano-torres/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <BsLinkedin color="#0A66C2" />
             </a>
-            <a 
+            <a
               href="https://twitter.com/HectorAndreHT"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +50,7 @@ const Footer = () => {
         </FooterDiv>
       </FooterContainer>
     </IconContext.Provider>
-  )
-}
+  );
+};
 
 export default Footer;

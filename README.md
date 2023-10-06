@@ -29,10 +29,12 @@
 
 ### Built with
 
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Programming language
 - [React](https://reactjs.org/) - JS library
-- [Styled-components](https://styled-components.com/) - Library built for React
-- [Typed.js](https://www.npmjs.com/package/typed.js) - Library that types
-- [React-icons](https://www.npmjs.com/package/react-icons) - Library
+- [Styled-components](https://styled-components.com/) - CSS for the component
+- [Typed.js](https://www.npmjs.com/package/typed.js) - JavaScript typing animation library
+- [React-icons](https://www.npmjs.com/package/react-icons) - Popular icon packs
 
 ## Getting started
 

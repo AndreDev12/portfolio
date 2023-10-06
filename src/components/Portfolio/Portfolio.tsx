@@ -2,27 +2,37 @@ import { IconContext } from 'react-icons';
 import { BsGithub } from 'react-icons/bs';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import { Card, ContentText, PortfolioContainer, PortfolioDiv, ProjectImage, ProjectInfo, ProjectLinks, Projects, ProjectText } from './styles';
-import imgStartupPortfolio from '../../assets/img/startup portfolio.png';
-import imgMarvelCharacters from '../../assets/img/marvel characters.png';
-import imgIntroSectionWithDropdownNavigation from '../../assets/img/intro section with dropdown navigation.png';
-import imgIntroComponentWithSignupForm from '../../assets/img/intro component with sign up form.png';
-import imgIpAddressTracker from '../../assets/img/ip address tracker.png';
-import imgRestCountriesApiWithColorThemeSwitcher from '../../assets/img/rest countries api with color theme switcher.png';
+import {
+  Card,
+  ContentText,
+  PortfolioContainer,
+  PortfolioDiv,
+  ProjectImage,
+  ProjectInfo,
+  ProjectLinks,
+  Projects,
+  ProjectText,
+} from './styles';
+import imgRestCountriesApiWithColorThemeSwitcher from '../../../public/img/rest-countries-api-with-color-theme-switcher.png';
+import imgIntroSectionWithDropdownNavigation from '../../../public/img/intro-section-with-dropdown-navigation.png';
+import imgIntroComponentWithSignupForm from '../../../public/img/intro-component-with-sign-up-form.png';
+import imgStartupPortfolio from '../../../public/img/startup-portfolio.png';
+import imgMarvelCharacters from '../../../public/img/marvel-characters.png';
+import imgIpAddressTracker from '../../../public/img/ip-address-tracker.png';
 
 const Portfolio = () => {
   return (
-    <IconContext.Provider value={{color:"#F0F6FC", size:"2rem"}}>
+    <IconContext.Provider value={{ color: '#F0F6FC', size: '2rem' }}>
       <PortfolioContainer>
         <PortfolioDiv>
           <ContentText>
             <h1>Recent works</h1>
-            <p>Check out some projects I've built recently</p>
+            <p>Check out some projects I&apos;ve built recently</p>
           </ContentText>
           <Projects>
             <Card>
-              <ProjectImage 
-                src={imgStartupPortfolio}
+              <ProjectImage
+                src={imgStartupPortfolio.src}
                 alt="Startup portfolio image"
               />
               <ProjectInfo>
@@ -31,7 +41,7 @@ const Portfolio = () => {
                   <p>HTML5, CSS3, JavaScript</p>
                 </ProjectText>
                 <ProjectLinks>
-                  <a 
+                  <a
                     href="https://github.com/AndreDev12/startup-portfolio"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -49,8 +59,8 @@ const Portfolio = () => {
               </ProjectInfo>
             </Card>
             <Card>
-              <ProjectImage 
-                src={imgMarvelCharacters}
+              <ProjectImage
+                src={imgMarvelCharacters.src}
                 alt="Image of marvel characters"
               />
               <ProjectInfo>
@@ -59,7 +69,7 @@ const Portfolio = () => {
                   <p>HTML5, CSS3, JavaScript</p>
                 </ProjectText>
                 <ProjectLinks>
-                  <a 
+                  <a
                     href="https://github.com/AndreDev12/marvel-characters"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -77,8 +87,8 @@ const Portfolio = () => {
               </ProjectInfo>
             </Card>
             <Card>
-              <ProjectImage 
-                src={imgIntroSectionWithDropdownNavigation}
+              <ProjectImage
+                src={imgIntroSectionWithDropdownNavigation.src}
                 alt="Image of intro section with dropdown navigation"
               />
               <ProjectInfo>
@@ -87,7 +97,7 @@ const Portfolio = () => {
                   <p>JavaScript, SASS</p>
                 </ProjectText>
                 <ProjectLinks>
-                  <a 
+                  <a
                     href="https://github.com/AndreDev12/intro-section-with-dropdown-navigation"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -105,8 +115,8 @@ const Portfolio = () => {
               </ProjectInfo>
             </Card>
             <Card>
-              <ProjectImage 
-                src={imgIntroComponentWithSignupForm}
+              <ProjectImage
+                src={imgIntroComponentWithSignupForm.src}
                 alt="Image of intro component with signup form"
               />
               <ProjectInfo>
@@ -115,7 +125,7 @@ const Portfolio = () => {
                   <p>CSS3, React</p>
                 </ProjectText>
                 <ProjectLinks>
-                  <a 
+                  <a
                     href="https://github.com/AndreDev12/intro-component-with-signup-form"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -133,8 +143,8 @@ const Portfolio = () => {
               </ProjectInfo>
             </Card>
             <Card>
-              <ProjectImage 
-                src={imgIpAddressTracker}
+              <ProjectImage
+                src={imgIpAddressTracker.src}
                 alt="Image of ip address tracker"
               />
               <ProjectInfo>
@@ -143,7 +153,7 @@ const Portfolio = () => {
                   <p>SASS, React</p>
                 </ProjectText>
                 <ProjectLinks>
-                  <a 
+                  <a
                     href="https://github.com/AndreDev12/ip-address-tracker"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -161,8 +171,8 @@ const Portfolio = () => {
               </ProjectInfo>
             </Card>
             <Card>
-              <ProjectImage 
-                src={imgRestCountriesApiWithColorThemeSwitcher}
+              <ProjectImage
+                src={imgRestCountriesApiWithColorThemeSwitcher.src}
                 alt="Image of rest countries api with color theme switcher"
               />
               <ProjectInfo>
@@ -171,7 +181,7 @@ const Portfolio = () => {
                   <p>SASS, React</p>
                 </ProjectText>
                 <ProjectLinks>
-                  <a 
+                  <a
                     href="https://github.com/AndreDev12/rest-countries-api-with-color-theme-switcher"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -192,7 +202,7 @@ const Portfolio = () => {
         </PortfolioDiv>
       </PortfolioContainer>
     </IconContext.Provider>
-  )
-}
+  );
+};
 
 export default Portfolio;

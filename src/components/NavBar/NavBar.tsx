@@ -2,47 +2,58 @@ import { IconContext } from 'react-icons';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { HeaderContainer, ListItem, Logo, MenuButton, Nav, Span, UnorderedList } from './styles';
-import logo from '../../assets/logos/logo.svg';
+import {
+  HeaderContainer,
+  ListItem,
+  Logo,
+  MenuButton,
+  Nav,
+  Span,
+  UnorderedList,
+} from './styles';
+import logo from '../../../public/logos/logo.svg';
 
 const NavBar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [isEnabled, setIsEnabled] = useState<boolean>(false);
 
   return (
-    <IconContext.Provider value={{ color:"#FFFFFF", size:"3rem" }}>
+    <IconContext.Provider value={{ color: '#FFFFFF', size: '3rem' }}>
       <HeaderContainer>
         <div>
           <div>
             <Logo>
               <Link to="/">
-                <img 
-                  src={logo}
-                  alt="Portfolio logo" 
-                />
+                <img src={logo.src} alt="Portfolio logo" />
               </Link>
             </Logo>
-            <MenuButton 
-              onClick={() => setToggle(!toggle)}
-              className= {toggle && "active"}
+            <MenuButton
+              onClick={() => {
+                setIsEnabled(!isEnabled);
+              }}
+              className={`${isEnabled} && 'active'`}
             >
               <Span></Span>
               <Span></Span>
               <Span></Span>
             </MenuButton>
-            <Nav toggle={toggle}>
+            <Nav enabled={isEnabled ? 'open' : ''}>
               <UnorderedList>
                 <ListItem>
-                  <Link 
+                  <Link
                     to="/"
-                    onClick={() => setToggle(!toggle)}
+                    onClick={() => {
+                      setIsEnabled(!isEnabled);
+                    }}
                   >
                     Home
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link 
+                  <Link
                     to="about"
-                    onClick={() => setToggle(!toggle)}
+                    onClick={() => {
+                      setIsEnabled(!isEnabled);
+                    }}
                   >
                     About
                   </Link>
@@ -50,7 +61,9 @@ const NavBar = () => {
                 <ListItem>
                   <Link
                     to="portfolio"
-                    onClick={() => setToggle(!toggle)}
+                    onClick={() => {
+                      setIsEnabled(!isEnabled);
+                    }}
                   >
                     Portfolio
                   </Link>
@@ -61,7 +74,7 @@ const NavBar = () => {
         </div>
       </HeaderContainer>
     </IconContext.Provider>
-  )
-}
+  );
+};
 
 export default NavBar;
