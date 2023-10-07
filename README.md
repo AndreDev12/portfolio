@@ -29,8 +29,6 @@
 
 ### Built with
 
-- [Next.js](https://nextjs.org/) - React framework
-- [TypeScript](https://www.typescriptlang.org/) - Programming language
 - [React](https://reactjs.org/) - JS library
 - [Styled-components](https://styled-components.com/) - CSS for the component
 - [Typed.js](https://www.npmjs.com/package/typed.js) - JavaScript typing animation library
