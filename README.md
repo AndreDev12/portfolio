@@ -3,7 +3,7 @@
   <a href="https://andredev.vercel.app/" target="_blank">andredev</a>
 </h1>
 <div align="center">
-  <img alt="Portfolio image" src="./src/assets/img/portfolio image.png" />
+  <img alt="Portfolio image" src="./public/img/portfolio-image.png" />
 </div>
 
 <br/>
